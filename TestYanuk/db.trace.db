@@ -1,0 +1,20 @@
+2018-07-16 18:04:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "ID[*]"; ожидалось "INSERT, {"
+Syntax error in SQL statement "ID[*]"; expected "INSERT, {"; SQL statement:
+ID [42001-197]
+2018-07-16 18:04:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "ID[*] TEXT"; ожидалось "INSERT, {"
+Syntax error in SQL statement "ID[*] TEXT"; expected "INSERT, {"; SQL statement:
+ID TEXT [42001-197]
+2018-07-16 18:04:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "ID[*] TEXT USER"; ожидалось "INSERT, {"
+Syntax error in SQL statement "ID[*] TEXT USER"; expected "INSERT, {"; SQL statement:
+ID TEXT USER [42001-197]
+2018-07-16 18:04:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "USER[*]"; ожидалось "UPDATE, USE, {"
+Syntax error in SQL statement "USER[*]"; expected "UPDATE, USE, {"; SQL statement:
+USER [42001-197]
+2018-07-16 18:30:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "DROP DATABASE[*] DB "; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP DATABASE[*] DB "; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop database db [42001-197]
