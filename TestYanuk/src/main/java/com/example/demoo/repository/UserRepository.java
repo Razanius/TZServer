@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long>, JpaSpecificationExecutor<User> {
+public interface UserRepository extends JpaRepository<User,Long>{
 
 
 
@@ -21,7 +21,7 @@ public interface UserRepository extends JpaRepository<User,Long>, JpaSpecificati
 
 
 
-    @Query("select u from User u where (u.article.size>:size )")
+    @Query("select distinct u.name from User u where (u.article.size>:size )")
     List<User> findCv(@org.springframework.data.repository.query.Param("size") Integer size);
 
 

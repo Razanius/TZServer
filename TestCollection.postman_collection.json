@@ -1,0 +1,229 @@
+{
+	"id": "587e9633-bd38-27d3-61f6-747d3834bd38",
+	"name": "TestCollection",
+	"description": "",
+	"order": [
+		"abf06020-5703-e33b-6ebe-453abd50f0ea",
+		"3b68b00a-6623-32dc-f19c-d3d47f4bb156",
+		"10fcc055-d9c0-ac5c-4c60-834db84a9825",
+		"12931867-155f-6ed7-db4c-fbc92f5060cd",
+		"d7e5fe05-4efb-6c2c-bc09-2fb11d53e520",
+		"8699aa97-8fd6-3c8a-e940-8ac536beb44c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1531758943688,
+	"owner": "4862443",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "10fcc055-d9c0-ac5c-4c60-834db84a9825",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/article",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Save articles",
+			"description": "Save Articles",
+			"descriptionFormat": "html",
+			"time": 1531770600189,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"text\": \"SomeArticle\",\n\t\"articleColorEnum\":2,\n\t\"idUser\":33\n}"
+		},
+		{
+			"id": "12931867-155f-6ed7-db4c-fbc92f5060cd",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/findAll",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"data": [
+				{
+					"key": "size",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Find all users",
+			"description": "Find all Users",
+			"descriptionFormat": "html",
+			"time": 1531770751243,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3b68b00a-6623-32dc-f19c-d3d47f4bb156",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/save",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Save Users",
+			"description": "Save Users",
+			"descriptionFormat": "html",
+			"time": 1531770491297,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"name\": \"Mykhailo\",\n\t\"age\":20\n}"
+		},
+		{
+			"id": "8699aa97-8fd6-3c8a-e940-8ac536beb44c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/age",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Find user by age",
+			"description": "Find all user by age.",
+			"descriptionFormat": "html",
+			"time": 1531770908229,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"age\": 10\n}"
+		},
+		{
+			"id": "abf06020-5703-e33b-6ebe-453abd50f0ea",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/filterBySize",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1531770344133,
+			"name": "Find all the names who have more 3 article",
+			"description": "Find all the names who have more 3 article",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d7e5fe05-4efb-6c2c-bc09-2fb11d53e520",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/article",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "587e9633-bd38-27d3-61f6-747d3834bd38",
+			"data": [
+				{
+					"key": "size",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Find all articles",
+			"description": "Find all Articles",
+			"descriptionFormat": "html",
+			"time": 1531770774299,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

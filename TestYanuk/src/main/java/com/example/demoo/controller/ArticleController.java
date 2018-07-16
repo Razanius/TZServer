@@ -19,7 +19,7 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    @PutMapping
+    @PostMapping
     public ArticleResponce save(@RequestBody ArticleRequest articleRequest){
         return articleService.save(articleRequest);
     }

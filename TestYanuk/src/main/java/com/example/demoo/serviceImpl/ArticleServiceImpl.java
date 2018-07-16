@@ -45,8 +45,5 @@ public class ArticleServiceImpl implements ArticleService {
         return articleRepository.getUsers(ArticleColorEnum.GREEN);
     }
 
-    //    @Override
-//    public List<Article> findByEnum(ArticleColorEnum articleColorEnum) {
-//        return articleRepository.findByEnum(articleColorEnum);
-//    }
+
 }
