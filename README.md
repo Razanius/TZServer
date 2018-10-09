@@ -6,3 +6,7 @@ Steps to run server:
 2. Open project "TestYanuk" in some Java IDE.
 3. Run this project.
 4. Run collection in Postman.
+
+OR
+
+In folder "target" run file demoo-0.0.1-SNAPSHOT.jar.
